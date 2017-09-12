@@ -8,7 +8,7 @@ The introduction to Sentiment Classification task, please refer to [Stanford Sen
 ## Dataset
 First of all, please clone repo and enter into project folder by:
 
-	git clone https://github.com/xxx/DiSAN
+	git clone https://github.com/forreview/DiSAN
 	cd DiSAN/SST_disan
 
 download data files into **dataset/** dir:
