@@ -31,7 +31,7 @@ class Configs(object):
 
         # @ ----------training ------
         parser.add_argument('--max_epoch', type=int, default=200, help='max epoch number')
-        parser.add_argument('--num_steps', type=int, default=500000, help='max steps num')
+        parser.add_argument('--num_steps', type=int, default=400000, help='max steps num')
         parser.add_argument('--train_batch_size', type=int, default=64, help='Train Batch Size')
         parser.add_argument('--test_batch_size', type=int, default=100, help='Test Batch Size')
         parser.add_argument('--optimizer', type=str, default='adadelta', help='choose an optimizer[adadelta|adam]')
