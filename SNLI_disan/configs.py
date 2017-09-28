@@ -12,7 +12,7 @@ class Configs(object):
 
         # ------parsing input arguments"--------
         parser = argparse.ArgumentParser()
-        parser.register('type', 'bool', (lambda x: x.lower() in ('True', "yes", "true", "t", "1")))
+        parser.register('type', 'bool', (lambda x: x.lower() in ("yes", "true", "t", "1")))
 
         # @ ----- control ----
         parser.add_argument('--debug', type='bool', default=False, help='whether run as debug mode')
@@ -30,7 +30,7 @@ class Configs(object):
         parser.add_argument('--load_path', type=str, default=None, help='specify which pre-trianed model to be load')
 
         # @ ----------training ------
-        parser.add_argument('--max_epoch', type=int, default=200, help='max epoch number')
+        parser.add_argument('--max_epoch', type=int, default=100, help='max epoch number')
         parser.add_argument('--num_steps', type=int, default=400000, help='max steps num')
         parser.add_argument('--train_batch_size', type=int, default=64, help='Train Batch Size')
         parser.add_argument('--test_batch_size', type=int, default=100, help='Test Batch Size')
@@ -69,7 +69,7 @@ class Configs(object):
 
         # # emb_opt_direct_attn
         parser.add_argument('--batch_norm', type='bool', default=False, help='(abandoned, keep False)')
-        parser.add_argument('--activation', type=str, default='relu', help='åabandoned')
+        parser.add_argument('--activation', type=str, default='relu', help='(abandoned')
 
         parser.set_defaults(shuffle=True)
         self.args = parser.parse_args()
